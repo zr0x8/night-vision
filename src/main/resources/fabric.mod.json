@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "night-vision",
+  "version": "${version}",
+
+  "name": "night vision",
+  "description": "gib u night vision, client sided",
+  "authors": [
+    "zr0x8"
+  ],
+
+  "license": "Unlicense",
+  "icon": "assets/nightvision/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "gg.zr0x8.nightvision.NightVisionClient"
+    ],
+    "modmenu": [
+      "gg.zr0x8.nightvision.ModMenuConfig"
+    ]
+  },
+  "mixins": [
+    "night-vision.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.17",
+    "minecraft": "~1.21",
+    "java": ">=21",
+    "fabric-api": "*",
+    "cloth-config": ">=12.0.108"
+  },
+  "suggests": {
+    "modmenu": ">=8.0.0"
+  }
+}

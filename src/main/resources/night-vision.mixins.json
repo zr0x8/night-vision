@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "gg.zr0x8.nightvision.mixin",
+  "client": [
+    "ClientPlayerEntityMixin",
+    "LightmapTextureManagerMixin",
+    "WorldRendererMixin"
+  ],
+  "compatibilityLevel": "JAVA_21",
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
